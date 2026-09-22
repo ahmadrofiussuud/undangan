@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef, useEffect, useState } from "react";
-import { Play, Pause, Music, Volume2, VolumeX, Disc } from "lucide-react";
+import { Play, Pause, Disc } from "lucide-react";
 
 interface AudioPlayerProps {
   isPlaying: boolean;
@@ -12,9 +12,9 @@ export default function AudioPlayer({ isPlaying, setIsPlaying }: AudioPlayerProp
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [progress, setProgress] = useState(0);
 
-  // Audio stream URL (Romantic Instrumental Wedding Song)
+  // Audio stream URL (Romantic Acoustic Wedding Track - Karena Bersamamu)
   const AUDIO_URL =
-    "https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=romantic-wedding-piano-112191.mp3";
+    "https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a74e53.mp3?filename=sweet-romantic-acoustic-guitar-wedding-10926.mp3";
 
   useEffect(() => {
     if (audioRef.current) {
@@ -50,7 +50,7 @@ export default function AudioPlayer({ isPlaying, setIsPlaying }: AudioPlayerProp
         preload="auto"
         onTimeUpdate={handleTimeUpdate}
       />
-      <div className="flex items-center gap-3 p-3 rounded-full bg-[#3d0710]/95 border-2 border-[#dfbf74]/60 text-[#fbf8f2] shadow-2xl backdrop-blur-md">
+      <div className="flex items-center gap-3 p-3 rounded-full bg-[#3d0710]/95 border-2 border-[#dfbf74]/70 text-[#fbf8f2] shadow-2xl backdrop-blur-md">
         {/* Animated Vinyl Icon */}
         <div
           onClick={togglePlay}
@@ -65,9 +65,9 @@ export default function AudioPlayer({ isPlaying, setIsPlaying }: AudioPlayerProp
         <div className="flex-1 min-w-0 space-y-1">
           <div className="flex items-center justify-between text-[11px]">
             <p className="font-serif italic font-semibold text-[#ebd397] truncate">
-              Nurdiana &amp; Thalib Wedding Song
+              Karena Bersamamu (Dunia Terasa Indah)
             </p>
-            <span className="text-[9px] uppercase tracking-wider text-stone-300 font-medium">
+            <span className="text-[9px] uppercase tracking-wider text-stone-300 font-medium ml-1">
               {isPlaying ? "Playing" : "Paused"}
             </span>
           </div>

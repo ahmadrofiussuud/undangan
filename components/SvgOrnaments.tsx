@@ -10,8 +10,8 @@ export function OvalLaceBorder({
   return (
     <div className={`relative max-w-lg mx-auto ${className}`}>
       {/* Outer Lace Scallop SVG Frame */}
-      <div className="relative p-8 sm:p-10 rounded-[4rem] bg-[#520d18] border-4 border-[#dfbf74]/60 shadow-2xl overflow-hidden">
-        {/* Decorative Gold Filigree Top Left Corner */}
+      <div className="relative p-8 sm:p-10 rounded-[4.5rem] bg-[#520d18] border-4 border-[#dfbf74] shadow-[0_20px_50px_rgba(0,0,0,0.8)] overflow-hidden">
+        {/* Decorative Gold Filigree Top Corner */}
         <svg
           className="absolute top-2 left-2 w-16 h-16 text-[#dfbf74]/70 pointer-events-none"
           viewBox="0 0 100 100"
@@ -27,7 +27,7 @@ export function OvalLaceBorder({
           <circle cx="20" cy="50" r="4" fill="currentColor" />
         </svg>
 
-        {/* Decorative Gold Filigree Bottom Right Corner */}
+        {/* Decorative Gold Filigree Bottom Corner */}
         <svg
           className="absolute bottom-2 right-2 w-16 h-16 text-[#dfbf74]/70 pointer-events-none rotate-180"
           viewBox="0 0 100 100"
@@ -46,6 +46,16 @@ export function OvalLaceBorder({
         {/* Content Container */}
         <div className="relative z-10">{children}</div>
       </div>
+
+      {/* Decorative Hanging Tassel at bottom center (Matching Video Reference) */}
+      <div className="flex justify-center -mt-3 animate-tassel">
+        <svg className="w-10 h-16 text-[#dfbf74] filter drop-shadow-lg" viewBox="0 0 40 60" fill="none">
+          <circle cx="20" cy="10" r="6" stroke="currentColor" strokeWidth="2" fill="#520d18" />
+          <path d="M20 16V28" stroke="currentColor" strokeWidth="3" />
+          <path d="M12 28C12 28 15 50 20 50C25 50 28 28 28 28H12Z" fill="#520d18" stroke="currentColor" strokeWidth="2" />
+          <path d="M14 48L10 58M18 50L17 60M22 50L23 60M26 48L30 58" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        </svg>
+      </div>
     </div>
   );
 }
@@ -62,11 +72,11 @@ export function VintageWaxSeal({
       onClick={onClick}
       type="button"
       aria-label="Wax Seal"
-      className={`relative inline-flex items-center justify-center cursor-pointer group focus:outline-none transition-transform duration-300 hover:scale-110 active:scale-95 ${className}`}
+      className={`relative inline-flex items-center justify-center cursor-pointer group focus:outline-none transition-transform duration-300 hover:scale-110 active:scale-95 animate-glow-pulse ${className}`}
     >
       <svg
         viewBox="0 0 100 100"
-        className="w-full h-full filter drop-shadow-xl"
+        className="w-full h-full filter drop-shadow-2xl"
         fill="none"
       >
         <path
@@ -119,12 +129,12 @@ export function FloralHeaderDivider({
       <path
         d="M100 20C96 14 90 12 84 14C82 18 86 24 100 20Z"
         fill="currentColor"
-        opacity="0.8"
+        opacity="0.85"
       />
       <path
         d="M100 20C104 14 110 12 116 14C118 18 114 24 100 20Z"
         fill="currentColor"
-        opacity="0.8"
+        opacity="0.85"
       />
       <circle cx="100" cy="20" r="3" fill="#dfbf74" />
     </svg>
@@ -140,7 +150,7 @@ export function BurgundyCardFrame({
 }) {
   return (
     <div
-      className={`relative p-6 sm:p-8 rounded-3xl border-2 border-[#dfbf74]/40 bg-[#3d0710]/90 shadow-2xl backdrop-blur-md text-[#fbf8f2] ${className}`}
+      className={`relative p-6 sm:p-8 rounded-3xl border-2 border-[#dfbf74]/60 bg-[#3d0710]/95 shadow-[0_20px_40px_rgba(0,0,0,0.6)] backdrop-blur-md text-[#fbf8f2] ${className}`}
     >
       {/* Corner borders */}
       <span className="absolute top-2.5 left-2.5 w-5 h-5 border-t-2 border-l-2 border-[#dfbf74] rounded-tl" />
