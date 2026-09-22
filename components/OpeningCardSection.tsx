@@ -3,21 +3,21 @@
 import React from "react";
 import Image from "next/image";
 import { BurgundyCardFrame, FloralHeaderDivider } from "./SvgOrnaments";
-import { Heart, Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
 
 export default function OpeningCardSection({ guestName }: { guestName: string }) {
   return (
     <section className="relative py-20 px-4 max-w-4xl mx-auto overflow-hidden text-[#fbf8f2]">
-      {/* Texture Overlay */}
+      {/* Background Image: Emerald Velvet Curtain Backdrop */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/burgundy_bg.jpg"
-          alt="Burgundy Background"
+          src="/hero_bg.jpg"
+          alt="Emerald Backdrop"
           fill
           sizes="100vw"
           className="object-cover object-center brightness-[0.55]"
         />
-        <div className="absolute inset-0 bg-[#3d0710]/80" />
+        <div className="absolute inset-0 bg-[#14281a]/80" />
       </div>
 
       <div className="relative z-10 max-w-2xl mx-auto text-center space-y-8">

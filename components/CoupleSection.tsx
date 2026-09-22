@@ -7,16 +7,16 @@ import { OvalLaceBorder, BurgundyCardFrame, FloralHeaderDivider } from "./SvgOrn
 export default function CoupleSection() {
   return (
     <section className="relative py-20 px-4 max-w-5xl mx-auto overflow-hidden text-[#fbf8f2]">
-      {/* Texture Background */}
+      {/* Texture Background: Emerald Velvet */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/burgundy_bg.jpg"
-          alt="Burgundy Backdrop"
+          src="/hero_bg.jpg"
+          alt="Emerald Backdrop"
           fill
           sizes="100vw"
           className="object-cover object-center brightness-[0.45]"
         />
-        <div className="absolute inset-0 bg-[#2b040a]/85" />
+        <div className="absolute inset-0 bg-[#14281a]/85" />
       </div>
 
       <div className="relative z-10">
@@ -52,7 +52,7 @@ export default function CoupleSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-14 items-center">
           {/* Bride: Nurdiana Kholida Zain, S. Kep. */}
           <div className="reveal-left space-y-6 text-center">
-            <BurgundyCardFrame className="max-w-sm mx-auto bg-[#520d18]/90">
+            <BurgundyCardFrame className="max-w-sm mx-auto bg-[#520d18]/95">
               <div className="relative w-64 h-80 sm:w-72 sm:h-96 mx-auto rounded-t-full rounded-b-2xl overflow-hidden shadow-2xl border-4 border-[#dfbf74]">
                 <Image
                   src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80"
@@ -81,7 +81,7 @@ export default function CoupleSection() {
 
           {/* Groom: Moh. Thalib, S.T. */}
           <div className="reveal-right space-y-6 text-center">
-            <BurgundyCardFrame className="max-w-sm mx-auto bg-[#520d18]/90">
+            <BurgundyCardFrame className="max-w-sm mx-auto bg-[#520d18]/95">
               <div className="relative w-64 h-80 sm:w-72 sm:h-96 mx-auto rounded-t-full rounded-b-2xl overflow-hidden shadow-2xl border-4 border-[#dfbf74]">
                 <Image
                   src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80"
