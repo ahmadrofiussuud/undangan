@@ -1,0 +1,62 @@
+"use client";
+
+import React from "react";
+import Image from "next/image";
+import { BurgundyCardFrame, FloralHeaderDivider } from "./SvgOrnaments";
+import { Heart, Sparkles } from "lucide-react";
+
+export default function OpeningCardSection({ guestName }: { guestName: string }) {
+  return (
+    <section className="relative py-20 px-4 max-w-4xl mx-auto overflow-hidden text-[#fbf8f2]">
+      {/* Texture Overlay */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/burgundy_bg.jpg"
+          alt="Burgundy Background"
+          fill
+          sizes="100vw"
+          className="object-cover object-center brightness-[0.55]"
+        />
+        <div className="absolute inset-0 bg-[#3d0710]/80" />
+      </div>
+
+      <div className="relative z-10 max-w-2xl mx-auto text-center space-y-8">
+        <BurgundyCardFrame className="bg-[#520d18]/95 border-2 border-[#dfbf74] shadow-2xl p-8 sm:p-12 space-y-6">
+          <div className="w-14 h-14 mx-auto rounded-full bg-[#3d0710] border-2 border-[#dfbf74] flex items-center justify-center shadow-lg">
+            <Sparkles className="w-7 h-7 text-[#dfbf74]" />
+          </div>
+
+          <p className="text-xs uppercase tracking-[0.25em] text-[#dfbf74] font-semibold">
+            Walimatul &apos;Ursy
+          </p>
+
+          <h2 className="text-4xl sm:text-6xl font-serif font-bold italic text-[#ebd397] drop-shadow gold-shimmer-text">
+            Nurdiana &amp; Thalib
+          </h2>
+
+          <FloralHeaderDivider className="w-44 h-10 mx-auto text-[#dfbf74]" />
+
+          <div className="space-y-3 pt-2">
+            <p className="text-xs uppercase tracking-widest text-stone-300 font-medium">
+              Kepada Yth. Bapak/Ibu/Saudara/i:
+            </p>
+            <p className="text-2xl font-serif font-bold text-white capitalize">
+              {guestName || "Tamu Undangan"}
+            </p>
+            <p className="text-xs sm:text-sm text-stone-200 leading-relaxed font-light px-4">
+              Tanpa mengurangi rasa hormat, perkenankan kami mengundang Bapak/Ibu/Saudara/i,{" "}
+              <strong className="font-semibold text-[#ebd397]">{guestName || "Tamu Undangan"}</strong>{" "}
+              untuk menghadiri acara pernikahan kami.
+            </p>
+          </div>
+
+          <div className="pt-4 border-t border-[#dfbf74]/30">
+            <p className="text-xs font-serif italic text-[#dfbf74]">
+              Kamis, 17 Desember 2026
+            </p>
+          </div>
+        </BurgundyCardFrame>
+      </div>
+    </section>
+  );
+}

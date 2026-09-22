@@ -3,6 +3,7 @@
 import React, { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import HeroSection from "@/components/HeroSection";
+import OpeningCardSection from "@/components/OpeningCardSection";
 import AudioPlayer from "@/components/AudioPlayer";
 import CoupleSection from "@/components/CoupleSection";
 import CountdownSection from "@/components/CountdownSection";
@@ -77,7 +78,10 @@ function InvitationContent() {
 
       {/* Main Invitation Content */}
       <div id="content" className={isOpen ? "block" : "hidden"}>
-        {/* Couple Profiles & Surah Ar-Rum Quote */}
+        {/* Dedicated Opening Card addressed to Guest Name */}
+        <OpeningCardSection guestName={guestName !== "Bapak/Ibu/Saudara/i" ? guestName : ""} />
+
+        {/* Couple Profiles & Surah Ar-Rum Quote (NO floral image header) */}
         <CoupleSection />
 
         {/* Countdown Timer & Save the Date */}
