@@ -70,23 +70,20 @@ export default function HeroSection({
         </p>
       </div>
 
-      {/* Plain Elite Vintage Envelope Graphic (Matching Screenshot 2 - NO text on envelope) */}
+      {/* Seamless Realistic Envelope Graphic with Floral Corners (Zero Grey Background!) */}
       <div
         onClick={onOpenInvitation}
         className="relative z-20 my-auto w-full max-w-sm sm:max-w-md mx-auto px-2 cursor-pointer group"
       >
-        <div className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden shadow-[0_30px_60px_rgba(0,0,0,0.9)] border-4 border-[#dfbf74]/60 -rotate-2 group-hover:rotate-0 group-hover:scale-105 transition-all duration-500">
+        <div className="relative w-full aspect-square sm:aspect-[4/3.5] rounded-3xl overflow-hidden shadow-[0_30px_60px_rgba(0,0,0,0.85)] -rotate-1 group-hover:rotate-0 group-hover:scale-105 transition-all duration-500">
           <Image
-            src="/plain_envelope.jpg"
-            alt="Plain Elite Wedding Envelope"
+            src="/seamless_envelope.jpg"
+            alt="Seamless Luxury Wedding Envelope"
             fill
-            sizes="(max-width: 768px) 100vw, 400px"
-            className="object-cover object-center filter drop-shadow-xl"
+            priority
+            sizes="(max-width: 768px) 100vw, 420px"
+            className="object-cover object-center filter drop-shadow-2xl"
           />
-
-          {/* Corner Floral Accents */}
-          <div className="absolute top-2 left-2 w-12 h-12 border-t-2 border-l-2 border-[#dfbf74]/70 rounded-tl pointer-events-none" />
-          <div className="absolute bottom-2 right-2 w-12 h-12 border-b-2 border-r-2 border-[#dfbf74]/70 rounded-br pointer-events-none" />
         </div>
       </div>
 

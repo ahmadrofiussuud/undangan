@@ -3,11 +3,11 @@
 import React from "react";
 import Image from "next/image";
 import { Heart } from "lucide-react";
-import { FloralHeaderDivider, OvalLaceBorder } from "./SvgOrnaments";
+import { FloralHeaderDivider } from "./SvgOrnaments";
 
 export default function FooterSection() {
   return (
-    <footer className="relative py-20 px-4 bg-[#0f1e14] text-[#fbf8f2] text-center overflow-hidden">
+    <footer className="relative pt-20 pb-32 px-4 bg-[#0f1e14] text-[#fbf8f2] text-center overflow-hidden">
       {/* Background Image Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
