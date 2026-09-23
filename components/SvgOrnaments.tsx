@@ -13,23 +13,23 @@ export function ScallopedCloudFrame({
 }) {
   return (
     <div className={`relative max-w-xl mx-auto ${className}`}>
-      {/* Top-Right Hanging Orchid Flower Ornament */}
+      {/* Top-Right Hanging Gold Vintage Lantern Ornament */}
       {showOrchids && (
-        <div className="absolute -top-7 -right-7 sm:-top-9 sm:-right-9 z-30 w-24 sm:w-36 pointer-events-none filter drop-shadow-2xl animate-orchid-sway-reverse">
+        <div className="absolute -top-8 -right-8 sm:-top-10 sm:-right-10 z-30 w-24 sm:w-36 pointer-events-none filter drop-shadow-2xl animate-lantern-sway-reverse">
           <img
-            src="/hanging_orchid.png"
-            alt="Hanging Orchid"
+            src="/hanging_lantern.png"
+            alt="Hanging Vintage Gold Lantern"
             className="w-full h-auto opacity-95"
           />
         </div>
       )}
 
-      {/* Bottom-Left Hanging Orchid Flower Ornament */}
+      {/* Bottom-Left Hanging Gold Vintage Lantern Ornament */}
       {showOrchids && (
-        <div className="absolute -bottom-7 -left-7 sm:-bottom-9 sm:-left-9 z-30 w-24 sm:w-36 pointer-events-none filter drop-shadow-2xl animate-orchid-sway">
+        <div className="absolute -bottom-8 -left-8 sm:-bottom-10 sm:-left-10 z-30 w-24 sm:w-36 pointer-events-none filter drop-shadow-2xl animate-lantern-sway">
           <img
-            src="/hanging_orchid.png"
-            alt="Hanging Orchid"
+            src="/hanging_lantern.png"
+            alt="Hanging Vintage Gold Lantern"
             className="w-full h-auto opacity-95"
           />
         </div>

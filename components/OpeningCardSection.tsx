@@ -21,25 +21,25 @@ export default function OpeningCardSection({ guestName }: { guestName: string })
       </div>
 
       <div className="relative z-10 max-w-2xl mx-auto text-center space-y-8">
-        {/* Hanging Royal Gold Chandelier Lantern - Top Left Ornament */}
-        <div className="absolute -top-16 -left-6 sm:-top-20 sm:-left-14 z-30 w-28 sm:w-44 pointer-events-none filter drop-shadow-2xl animate-lantern-sway">
+        {/* Hanging White Orchid Bouquet - Top Left Ornament */}
+        <div className="absolute -top-16 -left-6 sm:-top-20 sm:-left-14 z-30 w-28 sm:w-44 pointer-events-none filter drop-shadow-2xl animate-orchid-sway">
           <Image
-            src="/hanging_lantern.png"
-            alt="Hanging Vintage Gold Chandelier Lantern"
-            width={869}
-            height={1071}
+            src="/hanging_orchid.png"
+            alt="Hanging White Orchid Bouquet"
+            width={518}
+            height={1167}
             priority
             className="w-full h-auto opacity-95"
           />
         </div>
 
-        {/* Hanging Royal Gold Chandelier Lantern - Top Right Ornament */}
-        <div className="absolute -top-16 -right-6 sm:-top-20 sm:-right-14 z-30 w-28 sm:w-44 pointer-events-none filter drop-shadow-2xl animate-lantern-sway-reverse">
+        {/* Hanging White Orchid Bouquet - Top Right Ornament */}
+        <div className="absolute -top-16 -right-6 sm:-top-20 sm:-right-14 z-30 w-28 sm:w-44 pointer-events-none filter drop-shadow-2xl animate-orchid-sway-reverse">
           <Image
-            src="/hanging_lantern.png"
-            alt="Hanging Vintage Gold Chandelier Lantern"
-            width={869}
-            height={1071}
+            src="/hanging_orchid.png"
+            alt="Hanging White Orchid Bouquet"
+            width={518}
+            height={1167}
             priority
             className="w-full h-auto opacity-95"
           />
