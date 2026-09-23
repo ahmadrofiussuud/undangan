@@ -49,30 +49,6 @@ export default function HeroSection({
         />
       </div>
 
-      {/* Hanging White Orchid Bouquet - Top Left Corner Ornament (Modeled from Referensi 2) */}
-      <div className="absolute top-0 left-0 z-30 w-28 sm:w-44 pointer-events-none filter drop-shadow-2xl animate-orchid-sway">
-        <Image
-          src="/hanging_orchid.png"
-          alt="Hanging White Orchid Garland"
-          width={518}
-          height={1167}
-          priority
-          className="w-full h-auto opacity-90"
-        />
-      </div>
-
-      {/* Hanging White Orchid Bouquet - Top Right Corner Ornament (Modeled from Referensi 2) */}
-      <div className="absolute top-0 right-0 z-30 w-28 sm:w-44 pointer-events-none filter drop-shadow-2xl animate-orchid-sway-reverse">
-        <Image
-          src="/hanging_orchid.png"
-          alt="Hanging White Orchid Garland"
-          width={518}
-          height={1167}
-          priority
-          className="w-full h-auto opacity-90"
-        />
-      </div>
-
       {/* Floating Gold Sparkles */}
       <div className="absolute inset-0 pointer-events-none z-10 overflow-hidden">
         <span className="absolute top-1/4 left-8 w-2 h-2 rounded-full bg-[#dfbf74] animate-ping opacity-75" />
