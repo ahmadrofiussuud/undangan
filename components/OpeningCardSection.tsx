@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { ScallopedCloudFrame, FloralHeaderDivider } from "./SvgOrnaments";
+import { BurgundyCardFrame, FloralHeaderDivider } from "./SvgOrnaments";
 import { Sparkles } from "lucide-react";
 
 export default function OpeningCardSection({ guestName }: { guestName: string }) {
@@ -21,7 +21,31 @@ export default function OpeningCardSection({ guestName }: { guestName: string })
       </div>
 
       <div className="relative z-10 max-w-2xl mx-auto text-center space-y-8">
-        <ScallopedCloudFrame className="shadow-2xl space-y-6">
+        {/* Hanging Royal Gold Chandelier Lantern - Top Left Ornament */}
+        <div className="absolute -top-16 -left-6 sm:-top-20 sm:-left-14 z-30 w-28 sm:w-44 pointer-events-none filter drop-shadow-2xl animate-lantern-sway">
+          <Image
+            src="/hanging_lantern.png"
+            alt="Hanging Vintage Gold Chandelier Lantern"
+            width={869}
+            height={1071}
+            priority
+            className="w-full h-auto opacity-95"
+          />
+        </div>
+
+        {/* Hanging Royal Gold Chandelier Lantern - Top Right Ornament */}
+        <div className="absolute -top-16 -right-6 sm:-top-20 sm:-right-14 z-30 w-28 sm:w-44 pointer-events-none filter drop-shadow-2xl animate-lantern-sway-reverse">
+          <Image
+            src="/hanging_lantern.png"
+            alt="Hanging Vintage Gold Chandelier Lantern"
+            width={869}
+            height={1071}
+            priority
+            className="w-full h-auto opacity-95"
+          />
+        </div>
+
+        <BurgundyCardFrame className="bg-[#520d18]/95 border-2 border-[#dfbf74] shadow-2xl p-8 sm:p-12 space-y-6">
           <div className="w-14 h-14 mx-auto rounded-full bg-[#3d0710] border-2 border-[#dfbf74] flex items-center justify-center shadow-lg">
             <Sparkles className="w-7 h-7 text-[#dfbf74]" />
           </div>
@@ -55,7 +79,7 @@ export default function OpeningCardSection({ guestName }: { guestName: string })
               Kamis, 17 Desember 2026
             </p>
           </div>
-        </ScallopedCloudFrame>
+        </BurgundyCardFrame>
       </div>
     </section>
   );

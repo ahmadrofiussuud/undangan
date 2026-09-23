@@ -220,6 +220,35 @@ body {
   transform-origin: top center;
 }
 
+/* Gentle Swaying Gold Lantern Animation (For Walimatul Ursy Opening Section) */
+@keyframes lantern-sway {
+  0%, 100% {
+    transform: rotate(-4deg) translateY(0px);
+  }
+  50% {
+    transform: rotate(4deg) translateY(-8px);
+  }
+}
+
+.animate-lantern-sway {
+  animation: lantern-sway 6s ease-in-out infinite;
+  transform-origin: top center;
+}
+
+@keyframes lantern-sway-reverse {
+  0%, 100% {
+    transform: rotate(4deg) translateY(0px) scaleX(-1);
+  }
+  50% {
+    transform: rotate(-4deg) translateY(-8px) scaleX(-1);
+  }
+}
+
+.animate-lantern-sway-reverse {
+  animation: lantern-sway-reverse 6s ease-in-out infinite 0.7s;
+  transform-origin: top center;
+}
+
 /* Subtle Luxury Breathing Glow (Gentle & Premium) */
 @keyframes subtle-glow {
   0%, 100% {
