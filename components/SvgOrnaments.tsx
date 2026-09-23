@@ -163,3 +163,75 @@ export function BurgundyCardFrame({
 }
 
 export const GoldenFrameBorder = BurgundyCardFrame;
+
+export function LuxuryCouplePhotoFrame({
+  src,
+  alt,
+  className = "",
+}: {
+  src: string;
+  alt: string;
+  className?: string;
+}) {
+  return (
+    <div className={`relative group max-w-xs sm:max-w-sm mx-auto filter drop-shadow-[0_25px_50px_rgba(0,0,0,0.85)] ${className}`}>
+      {/* Top Royal Gold Crest Wreath Emblem */}
+      <div className="absolute -top-7 left-1/2 -translate-x-1/2 z-30 w-16 h-14 text-[#dfbf74] pointer-events-none filter drop-shadow-lg">
+        <svg viewBox="0 0 100 80" fill="none" className="w-full h-full">
+          <path
+            d="M50 5C62 18 82 12 92 28C78 33 72 52 50 46C28 52 22 33 8 28C18 12 38 18 50 5Z"
+            fill="url(#goldGradientArch)"
+          />
+          <path
+            d="M50 12C45 22 35 25 25 25C35 32 42 42 50 42C58 42 65 32 75 25C65 25 55 22 50 12Z"
+            fill="#520d18"
+            opacity="0.8"
+          />
+          <circle cx="50" cy="22" r="5" fill="#ebd397" />
+          <circle cx="28" cy="28" r="3" fill="#dfbf74" />
+          <circle cx="72" cy="28" r="3" fill="#dfbf74" />
+          <defs>
+            <linearGradient id="goldGradientArch" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#dfbf74" />
+              <stop offset="50%" stopColor="#ebd397" />
+              <stop offset="100%" stopColor="#b38e46" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      {/* Outer Metallic Gold Gradient Frame */}
+      <div className="relative p-2 sm:p-2.5 rounded-t-[8rem] rounded-b-3xl bg-gradient-to-b from-[#dfbf74] via-[#ebd397] to-[#b38e46] shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]">
+        
+        {/* Inner Dark Burgundy & Dotted Gold Border */}
+        <div className="relative p-2 rounded-t-[7.5rem] rounded-b-[1.4rem] bg-[#3d0710] border-2 border-dashed border-[#dfbf74]/60 overflow-hidden">
+          
+          {/* Photo Image Container */}
+          <div className="relative w-64 h-84 sm:w-72 sm:h-96 mx-auto rounded-t-[7rem] rounded-b-xl overflow-hidden shadow-inner bg-[#14281a]">
+            {/* Image Component */}
+            <img
+              src={src}
+              alt={alt}
+              className="w-full h-full object-cover object-top hover:scale-110 transition-transform duration-1000 ease-out"
+            />
+
+            {/* Soft Ambient Vignette & Gold Light Shimmer */}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#3d0710]/70 via-transparent to-black/20 pointer-events-none" />
+            <div className="absolute inset-0 border-[3px] border-[#dfbf74]/40 rounded-t-[7rem] rounded-b-xl pointer-events-none" />
+          </div>
+
+          {/* Bottom Gold Filigree Corner Ornaments inside Frame */}
+          <svg className="absolute bottom-1 left-1.5 w-7 h-7 text-[#dfbf74] opacity-85 pointer-events-none" viewBox="0 0 40 40" fill="none">
+            <path d="M5 35C5 20 20 5 35 5" stroke="currentColor" strokeWidth="2.5" />
+            <circle cx="12" cy="12" r="2.5" fill="currentColor" />
+          </svg>
+          <svg className="absolute bottom-1 right-1.5 w-7 h-7 text-[#dfbf74] opacity-85 pointer-events-none rotate-90" viewBox="0 0 40 40" fill="none">
+            <path d="M5 35C5 20 20 5 35 5" stroke="currentColor" strokeWidth="2.5" />
+            <circle cx="12" cy="12" r="2.5" fill="currentColor" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  );
+}
+

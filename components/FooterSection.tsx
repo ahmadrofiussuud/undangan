@@ -34,7 +34,7 @@ export default function FooterSection() {
 
           <div className="space-y-1 pt-2">
             <h2 className="text-3xl sm:text-4xl font-serif font-bold italic text-[#ebd397]">
-              Nurdiana &amp; Thalib
+              Diana &amp; Thalib
             </h2>
             <p className="text-xs text-stone-300">Beserta Keluarga Besar Kedua Mempelai</p>
           </div>
@@ -42,7 +42,7 @@ export default function FooterSection() {
 
         <div className="pt-8 border-t border-white/10 flex flex-col items-center gap-2 text-[11px] text-stone-400">
           <p className="flex items-center gap-1">
-            Made with <Heart className="w-3.5 h-3.5 text-rose-400 fill-rose-400" /> for Nurdiana &amp; Thalib Wedding
+            Made with <Heart className="w-3.5 h-3.5 text-rose-400 fill-rose-400" /> for Diana &amp; Thalib Wedding
           </p>
           <p>&copy; 2026 Digital Wedding Invitation. All rights reserved.</p>
         </div>

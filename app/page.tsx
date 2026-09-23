@@ -115,7 +115,7 @@ export default function Home() {
       fallback={
         <div className="min-h-screen flex items-center justify-center bg-[#14281a] text-[#dfbf74] font-serif">
           <div className="animate-pulse text-center space-y-2">
-            <h1 className="text-2xl font-bold">Nurdiana &amp; Thalib Wedding</h1>
+            <h1 className="text-2xl font-bold">Diana &amp; Thalib Wedding</h1>
             <p className="text-xs uppercase tracking-widest text-stone-300">Memuat Undangan...</p>
           </div>
         </div>

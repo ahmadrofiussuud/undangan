@@ -15,19 +15,19 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Undangan Pernikahan Rifa & Rizky",
+  title: "Undangan Pernikahan Diana & Thalib",
   description:
-    "Tanpa mengurangi rasa hormat, perkenankan kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan kami (Rifa & Rizky).",
+    "Tanpa mengurangi rasa hormat, perkenankan kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan kami (Diana & Thalib).",
   metadataBase: new URL("https://undangandiana.vercel.app"),
   openGraph: {
-    title: "The Wedding of Rifa & Rizky",
-    description: "Undangan Pernikahan Digital Rifa & Rizky - 20 Desember 2026",
+    title: "The Wedding of Diana & Thalib",
+    description: "Undangan Pernikahan Digital Diana & Thalib - 17 Desember 2026",
     images: [
       {
         url: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80",
         width: 1200,
         height: 630,
-        alt: "Rifa & Rizky Wedding",
+        alt: "Diana & Thalib Wedding",
       },
     ],
   },

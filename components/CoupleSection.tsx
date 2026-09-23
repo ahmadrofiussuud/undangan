@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { OvalLaceBorder, BurgundyCardFrame, FloralHeaderDivider } from "./SvgOrnaments";
+import { OvalLaceBorder, FloralHeaderDivider, LuxuryCouplePhotoFrame } from "./SvgOrnaments";
 
 export default function CoupleSection() {
   return (
@@ -49,24 +49,17 @@ export default function CoupleSection() {
         </div>
 
         {/* Main Couple Intro Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-14 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Bride: Nurdiana Kholida Zain, S. Kep. */}
           <div className="reveal-left space-y-6 text-center">
-            <BurgundyCardFrame className="max-w-sm mx-auto bg-[#520d18]/95">
-              <div className="relative w-64 h-80 sm:w-72 sm:h-96 mx-auto rounded-t-full rounded-b-2xl overflow-hidden shadow-2xl border-4 border-[#dfbf74]">
-                <Image
-                  src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80"
-                  alt="Nurdiana Kholida Zain, S. Kep."
-                  fill
-                  sizes="(max-width: 768px) 100vw, 320px"
-                  className="object-cover object-top hover:scale-105 transition-transform duration-700"
-                />
-              </div>
-            </BurgundyCardFrame>
+            <LuxuryCouplePhotoFrame
+              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80"
+              alt="Diana Kholida Zain, S. Kep."
+            />
 
-            <div className="space-y-2">
+            <div className="space-y-2 pt-2">
               <h2 className="text-2xl sm:text-3xl font-serif font-bold text-[#ebd397] drop-shadow gold-shimmer-text">
-                Nurdiana Kholida Zain, S. Kep.
+                Diana Kholida Zain, S. Kep.
               </h2>
               <p className="text-xs uppercase tracking-widest text-[#dfbf74] font-medium">
                 Mempelai Wanita
@@ -81,19 +74,12 @@ export default function CoupleSection() {
 
           {/* Groom: Moh. Thalib, S.T. */}
           <div className="reveal-right space-y-6 text-center">
-            <BurgundyCardFrame className="max-w-sm mx-auto bg-[#520d18]/95">
-              <div className="relative w-64 h-80 sm:w-72 sm:h-96 mx-auto rounded-t-full rounded-b-2xl overflow-hidden shadow-2xl border-4 border-[#dfbf74]">
-                <Image
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80"
-                  alt="Moh. Thalib, S.T."
-                  fill
-                  sizes="(max-width: 768px) 100vw, 320px"
-                  className="object-cover object-top hover:scale-105 transition-transform duration-700"
-                />
-              </div>
-            </BurgundyCardFrame>
+            <LuxuryCouplePhotoFrame
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80"
+              alt="Moh. Thalib, S.T."
+            />
 
-            <div className="space-y-2">
+            <div className="space-y-2 pt-2">
               <h2 className="text-2xl sm:text-3xl font-serif font-bold text-[#ebd397] drop-shadow gold-shimmer-text">
                 Moh. Thalib, S.T.
               </h2>

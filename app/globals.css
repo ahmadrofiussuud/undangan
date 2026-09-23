@@ -177,20 +177,71 @@ body {
   animation: gold-shimmer 4s linear infinite;
 }
 
-/* Glowing Wax Seal Pulse */
-@keyframes glow-pulse {
+/* Smooth 3D Floating Envelope Animation (Inspired by Referensi 2) */
+@keyframes float-gentle {
   0%, 100% {
-    box-shadow: 0 0 15px rgba(223, 191, 116, 0.4);
-    transform: scale(1);
+    transform: translateY(0px) rotate(-1.5deg);
   }
   50% {
-    box-shadow: 0 0 30px rgba(235, 211, 151, 0.8);
-    transform: scale(1.05);
+    transform: translateY(-14px) rotate(1deg);
   }
 }
 
+.animate-float-gentle {
+  animation: float-gentle 4.5s ease-in-out infinite;
+}
+
+/* Gentle Swaying Orchid Bouquet Animation (Modeled from Referensi 2 Screenshot) */
+@keyframes orchid-sway {
+  0%, 100% {
+    transform: rotate(-3.5deg) translateY(0px);
+  }
+  50% {
+    transform: rotate(3.5deg) translateY(-10px);
+  }
+}
+
+.animate-orchid-sway {
+  animation: orchid-sway 5.5s ease-in-out infinite;
+  transform-origin: top center;
+}
+
+@keyframes orchid-sway-reverse {
+  0%, 100% {
+    transform: rotate(3.5deg) translateY(0px) scaleX(-1);
+  }
+  50% {
+    transform: rotate(-3.5deg) translateY(-10px) scaleX(-1);
+  }
+}
+
+.animate-orchid-sway-reverse {
+  animation: orchid-sway-reverse 5.5s ease-in-out infinite 0.5s;
+  transform-origin: top center;
+}
+
+/* Subtle Luxury Breathing Glow (Gentle & Premium) */
+@keyframes subtle-glow {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 12px rgba(223, 191, 116, 0.25), 0 10px 25px rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    transform: scale(1.025);
+    box-shadow: 0 0 22px rgba(235, 211, 151, 0.5), 0 14px 30px rgba(0, 0, 0, 0.6);
+  }
+}
+
+.animate-subtle-glow {
+  animation: subtle-glow 4s ease-in-out infinite;
+}
+
+.animate-cenat-cenut {
+  animation: subtle-glow 4s ease-in-out infinite;
+}
+
 .animate-glow-pulse {
-  animation: glow-pulse 3s ease-in-out infinite;
+  animation: subtle-glow 4s ease-in-out infinite;
 }
 
 /* Tassel gentle swing */

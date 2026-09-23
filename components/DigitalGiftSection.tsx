@@ -9,7 +9,7 @@ const accounts = [
   {
     type: "BCA",
     accountNumber: "2010471926",
-    accountHolder: "NURDIANA KHOLIDA ZAIN",
+    accountHolder: "DIANA KHOLIDA ZAIN",
     icon: CreditCard,
   },
   {
