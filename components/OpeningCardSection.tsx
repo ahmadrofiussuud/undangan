@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { BurgundyCardFrame, FloralHeaderDivider } from "./SvgOrnaments";
+import { ScallopedCloudFrame, FloralHeaderDivider } from "./SvgOrnaments";
 import { Sparkles } from "lucide-react";
 
 export default function OpeningCardSection({ guestName }: { guestName: string }) {
@@ -21,30 +21,7 @@ export default function OpeningCardSection({ guestName }: { guestName: string })
       </div>
 
       <div className="relative z-10 max-w-2xl mx-auto text-center space-y-8">
-        {/* Hanging White Orchid Bouquet - Top Left Corner Ornament (Modeled from Referensi 2) */}
-        <div className="absolute -top-16 -left-8 sm:-top-20 sm:-left-16 z-30 w-32 sm:w-48 pointer-events-none filter drop-shadow-2xl animate-orchid-sway">
-          <Image
-            src="/hanging_orchid.png"
-            alt="Hanging White Orchid Garland"
-            width={518}
-            height={1167}
-            priority
-            className="w-full h-auto opacity-95"
-          />
-        </div>
-
-        {/* Hanging White Orchid Bouquet - Top Right Corner Ornament (Modeled from Referensi 2) */}
-        <div className="absolute -top-16 -right-8 sm:-top-20 sm:-right-16 z-30 w-32 sm:w-48 pointer-events-none filter drop-shadow-2xl animate-orchid-sway-reverse">
-          <Image
-            src="/hanging_orchid.png"
-            alt="Hanging White Orchid Garland"
-            width={518}
-            height={1167}
-            priority
-            className="w-full h-auto opacity-95"
-          />
-        </div>
-        <BurgundyCardFrame className="bg-[#520d18]/95 border-2 border-[#dfbf74] shadow-2xl p-8 sm:p-12 space-y-6">
+        <ScallopedCloudFrame className="shadow-2xl space-y-6">
           <div className="w-14 h-14 mx-auto rounded-full bg-[#3d0710] border-2 border-[#dfbf74] flex items-center justify-center shadow-lg">
             <Sparkles className="w-7 h-7 text-[#dfbf74]" />
           </div>
@@ -78,7 +55,7 @@ export default function OpeningCardSection({ guestName }: { guestName: string })
               Kamis, 17 Desember 2026
             </p>
           </div>
-        </BurgundyCardFrame>
+        </ScallopedCloudFrame>
       </div>
     </section>
   );

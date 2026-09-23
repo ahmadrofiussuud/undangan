@@ -1,5 +1,85 @@
 import React from "react";
 
+export function ScallopedCloudFrame({
+  children,
+  className = "",
+  showOrchids = true,
+  showTassel = true,
+}: {
+  children: React.ReactNode;
+  className?: string;
+  showOrchids?: boolean;
+  showTassel?: boolean;
+}) {
+  return (
+    <div className={`relative max-w-xl mx-auto ${className}`}>
+      {/* Top-Right Hanging Orchid Flower Ornament */}
+      {showOrchids && (
+        <div className="absolute -top-7 -right-7 sm:-top-9 sm:-right-9 z-30 w-24 sm:w-36 pointer-events-none filter drop-shadow-2xl animate-orchid-sway-reverse">
+          <img
+            src="/hanging_orchid.png"
+            alt="Hanging Orchid"
+            className="w-full h-auto opacity-95"
+          />
+        </div>
+      )}
+
+      {/* Bottom-Left Hanging Orchid Flower Ornament */}
+      {showOrchids && (
+        <div className="absolute -bottom-7 -left-7 sm:-bottom-9 sm:-left-9 z-30 w-24 sm:w-36 pointer-events-none filter drop-shadow-2xl animate-orchid-sway">
+          <img
+            src="/hanging_orchid.png"
+            alt="Hanging Orchid"
+            className="w-full h-auto opacity-95"
+          />
+        </div>
+      )}
+
+      {/* Scalloped Outer Container */}
+      <div className="relative p-6 sm:p-10 text-[#fbf8f2]">
+        {/* SVG Scalloped Wavy Border Background */}
+        <svg
+          className="absolute inset-0 w-full h-full pointer-events-none filter drop-shadow-[0_25px_60px_rgba(0,0,0,0.9)]"
+          viewBox="0 0 500 650"
+          preserveAspectRatio="none"
+        >
+          {/* Outer Solid Gold Scalloped Path */}
+          <path
+            d="M 120 18 Q 160 5, 200 18 Q 250 5, 300 18 Q 340 5, 380 18 Q 440 18, 465 45 Q 492 70, 482 120 Q 495 170, 482 220 Q 495 270, 482 320 Q 495 370, 482 420 Q 495 470, 482 530 Q 492 580, 465 605 Q 440 632, 380 632 Q 340 645, 300 632 Q 250 645, 200 632 Q 160 645, 120 632 Q 60 632, 35 605 Q 8 580, 18 530 Q 5 470, 18 420 Q 5 370, 18 320 Q 5 270, 18 220 Q 5 170, 18 120 Q 8 70, 35 45 Q 60 18, 120 18 Z"
+            fill="#3d0710"
+            stroke="#dfbf74"
+            strokeWidth="5"
+          />
+          {/* Inner Dotted Gold Line */}
+          <path
+            d="M 123 26 Q 160 15, 200 26 Q 250 15, 300 26 Q 340 15, 377 26 Q 432 26, 456 50 Q 480 74, 471 120 Q 484 170, 471 220 Q 484 270, 471 320 Q 484 370, 471 420 Q 484 470, 471 525 Q 480 571, 456 595 Q 432 619, 377 619 Q 340 630, 300 619 Q 250 630, 200 619 Q 160 630, 123 619 Q 68 619, 44 595 Q 20 571, 29 525 Q 16 470, 29 420 Q 16 370, 29 320 Q 16 270, 29 220 Q 16 170, 29 120 Q 20 74, 44 50 Q 68 26, 123 26 Z"
+            fill="none"
+            stroke="#ebd397"
+            strokeWidth="1.8"
+            strokeDasharray="4 3"
+            opacity="0.85"
+          />
+        </svg>
+
+        {/* Content Container */}
+        <div className="relative z-10 p-2 sm:p-4">{children}</div>
+      </div>
+
+      {/* Decorative Hanging Tassel at bottom center */}
+      {showTassel && (
+        <div className="flex justify-center -mt-3 animate-tassel">
+          <svg className="w-10 h-16 text-[#dfbf74] filter drop-shadow-lg" viewBox="0 0 40 60" fill="none">
+            <circle cx="20" cy="10" r="6" stroke="currentColor" strokeWidth="2" fill="#520d18" />
+            <path d="M20 16V28" stroke="currentColor" strokeWidth="3" />
+            <path d="M12 28C12 28 15 50 20 50C25 50 28 28 28 28H12Z" fill="#520d18" stroke="currentColor" strokeWidth="2" />
+            <path d="M14 48L10 58M18 50L17 60M22 50L23 60M26 48L30 58" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+          </svg>
+        </div>
+      )}
+    </div>
+  );
+}
+
 export function OvalLaceBorder({
   children,
   className = "",
@@ -8,55 +88,9 @@ export function OvalLaceBorder({
   className?: string;
 }) {
   return (
-    <div className={`relative max-w-lg mx-auto ${className}`}>
-      {/* Outer Lace Scallop SVG Frame */}
-      <div className="relative p-8 sm:p-10 rounded-[4.5rem] bg-[#520d18] border-4 border-[#dfbf74] shadow-[0_20px_50px_rgba(0,0,0,0.8)] overflow-hidden">
-        {/* Decorative Gold Filigree Top Corner */}
-        <svg
-          className="absolute top-2 left-2 w-16 h-16 text-[#dfbf74]/70 pointer-events-none"
-          viewBox="0 0 100 100"
-          fill="none"
-        >
-          <path
-            d="M10 90C10 40 40 10 90 10"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeDasharray="4 4"
-          />
-          <circle cx="50" cy="20" r="4" fill="currentColor" />
-          <circle cx="20" cy="50" r="4" fill="currentColor" />
-        </svg>
-
-        {/* Decorative Gold Filigree Bottom Corner */}
-        <svg
-          className="absolute bottom-2 right-2 w-16 h-16 text-[#dfbf74]/70 pointer-events-none rotate-180"
-          viewBox="0 0 100 100"
-          fill="none"
-        >
-          <path
-            d="M10 90C10 40 40 10 90 10"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeDasharray="4 4"
-          />
-          <circle cx="50" cy="20" r="4" fill="currentColor" />
-          <circle cx="20" cy="50" r="4" fill="currentColor" />
-        </svg>
-
-        {/* Content Container */}
-        <div className="relative z-10">{children}</div>
-      </div>
-
-      {/* Decorative Hanging Tassel at bottom center (Matching Video Reference) */}
-      <div className="flex justify-center -mt-3 animate-tassel">
-        <svg className="w-10 h-16 text-[#dfbf74] filter drop-shadow-lg" viewBox="0 0 40 60" fill="none">
-          <circle cx="20" cy="10" r="6" stroke="currentColor" strokeWidth="2" fill="#520d18" />
-          <path d="M20 16V28" stroke="currentColor" strokeWidth="3" />
-          <path d="M12 28C12 28 15 50 20 50C25 50 28 28 28 28H12Z" fill="#520d18" stroke="currentColor" strokeWidth="2" />
-          <path d="M14 48L10 58M18 50L17 60M22 50L23 60M26 48L30 58" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-        </svg>
-      </div>
-    </div>
+    <ScallopedCloudFrame className={className} showOrchids={true} showTassel={true}>
+      {children}
+    </ScallopedCloudFrame>
   );
 }
 
