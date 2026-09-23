@@ -15,7 +15,7 @@ export function ScallopedCloudFrame({
     <div className={`relative max-w-xl mx-auto ${className}`}>
       {/* Top-Right Hanging Gold Vintage Lantern Ornament */}
       {showOrchids && (
-        <div className="absolute -top-4 -right-5 sm:-top-5 sm:-right-6 z-30 w-22 sm:w-32 pointer-events-none filter drop-shadow-2xl animate-lantern-sway-reverse">
+        <div className="absolute top-2 -right-2 sm:top-3 sm:-right-3 z-30 w-22 sm:w-32 pointer-events-none filter drop-shadow-2xl animate-lantern-sway-reverse">
           <img
             src="/hanging_lantern.png"
             alt="Hanging Vintage Gold Lantern"
