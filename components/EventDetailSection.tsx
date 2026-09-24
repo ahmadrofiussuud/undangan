@@ -3,7 +3,13 @@
 import React from "react";
 import Image from "next/image";
 import { Clock, MapPin, Navigation } from "lucide-react";
-import { BurgundyCardFrame, FloralHeaderDivider } from "./SvgOrnaments";
+import {
+  BurgundyCardFrame,
+  FloralHeaderDivider,
+  GoldenCornerFlourish,
+  GoldIslamicDomeEmblem,
+  GoldRingsEmblem,
+} from "./SvgOrnaments";
 
 export default function EventDetailSection() {
   const mapDirectionsUrl =
