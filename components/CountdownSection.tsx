@@ -51,18 +51,6 @@ export default function CountdownSection() {
       <div className="absolute inset-0 opacity-15 bg-[radial-gradient(#dfbf74_1px,transparent_1px)] [background-size:18px_18px]" />
 
       <div className="relative z-10 max-w-4xl mx-auto text-center space-y-10">
-        {/* Prominent Hanging Floral Garland Arch Banner */}
-        <div className="w-full max-w-2xl mx-auto -mb-6 pointer-events-none filter drop-shadow-[0_15px_30px_rgba(0,0,0,0.85)] animate-orchid-sway">
-          <Image
-            src="/hanging_garland_arch.png"
-            alt="Hanging Floral Garland Arch"
-            width={1000}
-            height={500}
-            priority
-            className="w-full h-auto opacity-95"
-          />
-        </div>
-
         {/* Save the Date */}
         <div className="reveal space-y-2">
           <p className="text-4xl sm:text-6xl font-serif italic text-[#dfbf74] drop-shadow-md">
