@@ -21,27 +21,27 @@ export default function OpeningCardSection({ guestName }: { guestName: string })
       </div>
 
       <div className="relative z-10 max-w-2xl mx-auto text-center space-y-8">
-        {/* Hanging White Orchid Bouquet - Top Left Ornament */}
-        <div className="absolute -top-16 -left-6 sm:-top-20 sm:-left-14 z-30 w-28 sm:w-44 pointer-events-none filter drop-shadow-2xl animate-orchid-sway">
+        {/* Prominent Large Wedding Floral Corner - Top Left */}
+        <div className="absolute -top-20 -left-10 sm:-top-28 sm:-left-20 z-30 w-44 sm:w-64 pointer-events-none filter drop-shadow-[0_15px_35px_rgba(0,0,0,0.85)] animate-orchid-sway">
           <Image
-            src="/hanging_orchid.png"
-            alt="Hanging White Orchid Bouquet"
-            width={518}
-            height={1167}
+            src="/floral_corner_large.png"
+            alt="Large Luxury Wedding Floral Arrangement"
+            width={1000}
+            height={1000}
             priority
             className="w-full h-auto opacity-95"
           />
         </div>
 
-        {/* Hanging White Orchid Bouquet - Top Right Ornament */}
-        <div className="absolute -top-16 -right-6 sm:-top-20 sm:-right-14 z-30 w-28 sm:w-44 pointer-events-none filter drop-shadow-2xl animate-orchid-sway-reverse">
+        {/* Prominent Large Wedding Floral Corner - Top Right (Flipped) */}
+        <div className="absolute -top-20 -right-10 sm:-top-28 sm:-right-20 z-30 w-44 sm:w-64 pointer-events-none filter drop-shadow-[0_15px_35px_rgba(0,0,0,0.85)] animate-orchid-sway-reverse">
           <Image
-            src="/hanging_orchid.png"
-            alt="Hanging White Orchid Bouquet"
-            width={518}
-            height={1167}
+            src="/floral_corner_large.png"
+            alt="Large Luxury Wedding Floral Arrangement"
+            width={1000}
+            height={1000}
             priority
-            className="w-full h-auto opacity-95"
+            className="w-full h-auto opacity-95 scale-x-[-1]"
           />
         </div>
 

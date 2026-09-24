@@ -33,6 +33,18 @@ export default function EventDetailSection() {
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto">
+        {/* Prominent Hanging Floral Garland Arch Header */}
+        <div className="w-full max-w-2xl mx-auto -mb-4 pointer-events-none filter drop-shadow-[0_15px_30px_rgba(0,0,0,0.85)] animate-orchid-sway">
+          <Image
+            src="/hanging_garland_arch.png"
+            alt="Hanging Floral Garland Arch"
+            width={1000}
+            height={500}
+            priority
+            className="w-full h-auto opacity-95"
+          />
+        </div>
+
         {/* Title */}
         <div className="reveal text-center max-w-xl mx-auto mb-16 space-y-3">
           <p className="text-xs uppercase tracking-[0.25em] text-[#dfbf74] font-semibold">
