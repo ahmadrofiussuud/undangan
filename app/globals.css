@@ -370,3 +370,24 @@ body {
   animation: corner-sway 4.5s ease-in-out infinite;
 }
 
+/* Fluttering Gold Butterfly Animation */
+@keyframes butterfly-flutter {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+  25% {
+    transform: translateY(-8px) rotate(-5deg) scale(1.05);
+  }
+  50% {
+    transform: translateY(-14px) rotate(3deg) scale(0.98);
+  }
+  75% {
+    transform: translateY(-6px) rotate(6deg) scale(1.03);
+  }
+}
+
+.animate-butterfly {
+  animation: butterfly-flutter 5s ease-in-out infinite;
+}
+
+

@@ -20,6 +20,30 @@ export default function CoupleSection() {
       </div>
 
       <div className="relative z-10">
+        {/* Floating 100% Clean Gold Butterfly Accent - Top Left */}
+        <div className="absolute -top-6 left-2 sm:left-12 z-30 w-12 sm:w-16 pointer-events-none filter drop-shadow-xl animate-butterfly">
+          <Image
+            src="/gold_butterfly.png"
+            alt="Gold Butterfly"
+            width={300}
+            height={300}
+            priority
+            className="w-full h-auto opacity-90"
+          />
+        </div>
+
+        {/* Floating 100% Clean Gold Butterfly Accent - Top Right */}
+        <div className="absolute top-8 right-2 sm:right-12 z-30 w-10 sm:w-14 pointer-events-none filter drop-shadow-xl animate-butterfly [animation-delay:2s]">
+          <Image
+            src="/gold_butterfly.png"
+            alt="Gold Butterfly"
+            width={300}
+            height={300}
+            priority
+            className="w-full h-auto opacity-85 scale-x-[-1]"
+          />
+        </div>
+
         {/* Quran Quote Card with Oval Lace Border & Hanging Tassel (NO floral image header) */}
         <div className="reveal mb-16">
           <OvalLaceBorder>
