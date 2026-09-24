@@ -2,7 +2,8 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { FloralHeaderDivider } from "./SvgOrnaments";
+import { FloralHeaderDivider, GoldenCornerFlourish } from "./SvgOrnaments";
+import { GoldenSparkleParticles } from "./GoldenSparkleParticles";
 import { X, ZoomIn } from "lucide-react";
 
 const galleryImages = [
@@ -40,6 +41,9 @@ export default function GallerySection() {
 
   return (
     <section className="relative py-20 px-4 max-w-6xl mx-auto overflow-hidden text-[#fbf8f2]">
+      {/* Golden Sparkles Overlay */}
+      <GoldenSparkleParticles />
+
       {/* Texture Background */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -69,8 +73,11 @@ export default function GallerySection() {
             <div
               key={index}
               onClick={() => setSelectedImage(img)}
-              className="reveal-scale group relative h-52 sm:h-72 rounded-2xl overflow-hidden cursor-pointer shadow-2xl bg-[#520d18] border-2 border-[#dfbf74]"
+              className="reveal-scale group relative h-52 sm:h-72 rounded-2xl overflow-hidden cursor-pointer shadow-2xl bg-[#520d18] border-2 border-[#dfbf74] hover:scale-[1.02] transition-transform duration-500"
             >
+              <GoldenCornerFlourish className="absolute top-1 left-1 z-20 w-6 h-6 text-[#dfbf74] opacity-80 pointer-events-none animate-corner-sway" />
+              <GoldenCornerFlourish className="absolute bottom-1 right-1 z-20 w-6 h-6 text-[#dfbf74] opacity-80 pointer-events-none rotate-180 animate-corner-sway" />
+
               <Image
                 src={img.url}
                 alt={img.caption}
@@ -78,7 +85,7 @@ export default function GallerySection() {
                 sizes="(max-width: 768px) 50vw, 33vw"
                 className="object-cover group-hover:scale-110 transition-transform duration-700 ease-out brightness-95 group-hover:brightness-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white z-10">
                 <p className="text-xs font-serif italic text-[#ebd397]">
                   {img.caption}
                 </p>

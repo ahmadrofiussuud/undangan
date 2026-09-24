@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { Calendar } from "lucide-react";
 import { FloralHeaderDivider, GoldenCornerFlourish } from "./SvgOrnaments";
+import { GoldenSparkleParticles } from "./GoldenSparkleParticles";
 
 export default function CountdownSection() {
   const targetDate = new Date("2026-12-17T09:00:00+07:00").getTime();
@@ -42,6 +43,9 @@ export default function CountdownSection() {
 
   return (
     <section className="relative py-20 px-4 bg-[#14281a] text-[#fbf8f2] overflow-hidden">
+      {/* Golden Sparkle Particles Overlay */}
+      <GoldenSparkleParticles />
+
       {/* Texture Background */}
       <div className="absolute inset-0 opacity-15 bg-[radial-gradient(#dfbf74_1px,transparent_1px)] [background-size:18px_18px]" />
 

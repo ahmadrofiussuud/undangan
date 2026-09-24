@@ -10,6 +10,7 @@ import {
   GoldIslamicDomeEmblem,
   GoldRingsEmblem,
 } from "./SvgOrnaments";
+import { GoldenSparkleParticles } from "./GoldenSparkleParticles";
 
 export default function EventDetailSection() {
   const mapDirectionsUrl =
@@ -17,6 +18,8 @@ export default function EventDetailSection() {
 
   return (
     <section className="relative py-20 px-4 max-w-5xl mx-auto overflow-hidden text-[#fbf8f2]">
+      {/* Floating Golden Sparkle Particles */}
+      <GoldenSparkleParticles />
       {/* Background Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
