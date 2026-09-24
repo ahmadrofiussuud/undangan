@@ -8,7 +8,13 @@ import {
   submitRsvp,
   RsvpEntry,
 } from "@/lib/supabaseClient";
-import { FloralHeaderDivider, BurgundyCardFrame } from "./SvgOrnaments";
+import {
+  FloralHeaderDivider,
+  BurgundyCardFrame,
+  GoldenCornerFlourish,
+  GoldenQuillPenEmblem,
+  VintageWaxSeal,
+} from "./SvgOrnaments";
 import { Send, CheckCircle2, MessageSquare, Users, User } from "lucide-react";
 
 export default function RsvpSection({ defaultGuestName }: { defaultGuestName?: string }) {
@@ -82,8 +88,11 @@ export default function RsvpSection({ defaultGuestName }: { defaultGuestName?: s
       </div>
 
       <div className="relative z-10 max-w-3xl mx-auto">
-        {/* Title */}
+        {/* Title & Quill Pen Header Emblem */}
         <div className="reveal text-center max-w-xl mx-auto mb-14 space-y-3">
+          <div className="flex justify-center mb-1">
+            <GoldenQuillPenEmblem className="w-16 h-16 text-[#dfbf74] filter drop-shadow-xl animate-candle-flicker" />
+          </div>
           <p className="text-xs uppercase tracking-[0.25em] text-[#dfbf74] font-semibold">
             Konfirmasi Kehadiran &amp; Ucapan
           </p>
@@ -95,11 +104,17 @@ export default function RsvpSection({ defaultGuestName }: { defaultGuestName?: s
 
         {/* Form Card */}
         <div className="reveal-scale mb-16">
-          <BurgundyCardFrame className="bg-[#520d18]/95 border-2 border-[#dfbf74]">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <h3 className="text-xl font-serif font-semibold text-[#ebd397] text-center border-b border-[#dfbf74]/40 pb-4">
-                Kirim Konfirmasi &amp; Doa Restu
-              </h3>
+          <BurgundyCardFrame className="bg-[#520d18]/95 border-2 border-[#dfbf74] relative overflow-hidden group">
+            <GoldenCornerFlourish className="absolute top-1 left-1 w-8 h-8 text-[#dfbf74] opacity-80" />
+            <GoldenCornerFlourish className="absolute top-1 right-1 w-8 h-8 text-[#dfbf74] opacity-80 rotate-90" />
+            
+            <form onSubmit={handleSubmit} className="space-y-6 pt-2">
+              <div className="flex items-center justify-between border-b border-[#dfbf74]/40 pb-4">
+                <h3 className="text-xl font-serif font-semibold text-[#ebd397]">
+                  Kirim Konfirmasi &amp; Doa Restu
+                </h3>
+                <VintageWaxSeal className="w-10 h-10" />
+              </div>
 
               {submitSuccess && (
                 <div className="p-4 rounded-xl bg-emerald-950/80 border border-emerald-400 text-emerald-100 text-xs sm:text-sm flex items-start gap-3 animate-fade-in">
@@ -242,9 +257,11 @@ export default function RsvpSection({ defaultGuestName }: { defaultGuestName?: s
               {wishes.map((item, index) => (
                 <div
                   key={item.id || index}
-                  className="p-4 rounded-2xl bg-[#520d18]/90 border border-[#dfbf74]/50 shadow-md space-y-2 hover:border-[#dfbf74] transition-colors"
+                  className="p-4 rounded-2xl bg-[#520d18]/95 border border-[#dfbf74]/60 shadow-md space-y-2 hover:border-[#dfbf74] transition-colors relative overflow-hidden"
                 >
-                  <div className="flex items-center justify-between">
+                  <GoldenCornerFlourish className="absolute top-0.5 left-0.5 w-5 h-5 text-[#dfbf74] opacity-60" />
+                  <GoldenCornerFlourish className="absolute top-0.5 right-0.5 w-5 h-5 text-[#dfbf74] opacity-60 rotate-90" />
+                  <div className="flex items-center justify-between pt-1">
                     <div className="flex items-center gap-2">
                       <span className="w-8 h-8 rounded-full bg-[#3d0710] text-[#dfbf74] font-serif font-bold flex items-center justify-center text-xs border border-[#dfbf74]/50">
                         {item.guest_name.charAt(0).toUpperCase()}

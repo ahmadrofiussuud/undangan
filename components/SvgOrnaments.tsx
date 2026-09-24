@@ -383,4 +383,41 @@ export function GoldenVineNode({
   );
 }
 
+export function GoldenQuillPenEmblem({
+  className = "w-14 h-14 text-[#dfbf74]",
+}: {
+  className?: string;
+}) {
+  return (
+    <svg viewBox="0 0 80 80" fill="none" className={className}>
+      {/* Inkwell Container */}
+      <ellipse cx="28" cy="62" rx="14" ry="6" fill="#3d0710" stroke="currentColor" strokeWidth="2" />
+      <path d="M18 62 L20 48 C20 45, 36 45, 36 48 L38 62 Z" fill="#520d18" stroke="currentColor" strokeWidth="2" />
+      <rect x="22" y="44" width="12" height="4" rx="1" fill="#ebd397" />
+
+      {/* Golden Feather Quill Pen */}
+      <path
+        d="M65 10 C52 18, 38 32, 28 50 L34 52 C42 38, 56 24, 70 14 Z"
+        fill="url(#goldQuillGradient)"
+        stroke="currentColor"
+        strokeWidth="1.5"
+      />
+      <path d="M68 12 L27 54" stroke="#ebd397" strokeWidth="2" strokeLinecap="round" />
+      <path d="M27 54 L24 60 L28 56 Z" fill="#dfbf74" stroke="currentColor" strokeWidth="1" />
+      
+      {/* Feather Vane Lines */}
+      <path d="M60 18 Q50 25 45 32M55 24 Q48 30 42 38M48 30 Q42 36 37 44" stroke="#ebd397" strokeWidth="1" opacity="0.8" />
+
+      <defs>
+        <linearGradient id="goldQuillGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#dfbf74" />
+          <stop offset="50%" stopColor="#ebd397" />
+          <stop offset="100%" stopColor="#b38e46" />
+        </linearGradient>
+      </defs>
+    </svg>
+  );
+}
+
+
 
