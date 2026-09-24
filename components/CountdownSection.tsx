@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { Calendar } from "lucide-react";
-import { FloralHeaderDivider } from "./SvgOrnaments";
+import { FloralHeaderDivider, GoldenCornerFlourish } from "./SvgOrnaments";
 
 export default function CountdownSection() {
   const targetDate = new Date("2026-12-17T09:00:00+07:00").getTime();
@@ -59,13 +59,17 @@ export default function CountdownSection() {
 
         {/* Akad & Resepsi Timing Badges */}
         <div className="reveal-scale grid grid-cols-2 gap-4 max-w-md mx-auto">
-          <div className="p-4 rounded-2xl bg-[#520d18]/90 border-2 border-[#dfbf74]/60 shadow-xl text-center space-y-1">
+          <div className="p-4 rounded-2xl bg-[#520d18]/90 border-2 border-[#dfbf74]/60 shadow-xl text-center space-y-1 relative overflow-hidden">
+            <GoldenCornerFlourish className="absolute top-0.5 left-0.5 w-4 h-4 text-[#dfbf74] opacity-65" />
+            <GoldenCornerFlourish className="absolute bottom-0.5 right-0.5 w-4 h-4 text-[#dfbf74] opacity-65 rotate-180" />
             <span className="text-xs font-serif italic text-[#dfbf74] uppercase tracking-wider block">
               Akad Nikah
             </span>
             <p className="text-lg font-bold text-white">09.00 WIB</p>
           </div>
-          <div className="p-4 rounded-2xl bg-[#520d18]/90 border-2 border-[#dfbf74]/60 shadow-xl text-center space-y-1">
+          <div className="p-4 rounded-2xl bg-[#520d18]/90 border-2 border-[#dfbf74]/60 shadow-xl text-center space-y-1 relative overflow-hidden">
+            <GoldenCornerFlourish className="absolute top-0.5 left-0.5 w-4 h-4 text-[#dfbf74] opacity-65" />
+            <GoldenCornerFlourish className="absolute bottom-0.5 right-0.5 w-4 h-4 text-[#dfbf74] opacity-65 rotate-180" />
             <span className="text-xs font-serif italic text-[#dfbf74] uppercase tracking-wider block">
               Resepsi
             </span>
@@ -83,8 +87,10 @@ export default function CountdownSection() {
           ].map((item, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center p-3 sm:p-5 rounded-2xl bg-[#3d0710]/90 backdrop-blur-md border border-[#dfbf74]/50 shadow-xl"
+              className="flex flex-col items-center justify-center p-3 sm:p-5 rounded-2xl bg-[#3d0710]/95 backdrop-blur-md border-2 border-[#dfbf74]/60 shadow-xl relative overflow-hidden group hover:scale-105 transition-transform duration-300"
             >
+              <GoldenCornerFlourish className="absolute top-0.5 left-0.5 w-4 h-4 sm:w-5 sm:h-5 text-[#dfbf74] opacity-75" />
+              <GoldenCornerFlourish className="absolute bottom-0.5 right-0.5 w-4 h-4 sm:w-5 sm:h-5 text-[#dfbf74] opacity-75 rotate-180" />
               <span className="text-2xl sm:text-4xl font-serif font-bold text-[#ebd397] tabular-nums">
                 {String(item.value).padStart(2, "0")}
               </span>

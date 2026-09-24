@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { Copy, Check, Gift, CreditCard, Smartphone } from "lucide-react";
-import { BurgundyCardFrame, FloralHeaderDivider } from "./SvgOrnaments";
+import { BurgundyCardFrame, FloralHeaderDivider, GoldenCornerFlourish, VintageWaxSeal } from "./SvgOrnaments";
 
 const accounts = [
   {
@@ -66,15 +66,16 @@ export default function DigitalGiftSection() {
 
             return (
               <div key={index} className="reveal-scale">
-                <BurgundyCardFrame className="text-center space-y-4 bg-[#520d18]/90">
-                  <div className="flex items-center justify-between border-b border-[#dfbf74]/40 pb-3">
+                <BurgundyCardFrame className="text-center space-y-4 bg-[#520d18]/95 relative overflow-hidden group">
+                  <GoldenCornerFlourish className="absolute top-1 left-1 w-7 h-7 text-[#dfbf74] opacity-75" />
+                  <GoldenCornerFlourish className="absolute top-1 right-1 w-7 h-7 text-[#dfbf74] opacity-75 rotate-90" />
+                  
+                  <div className="flex items-center justify-between border-b border-[#dfbf74]/40 pb-3 pt-1">
                     <span className="font-serif font-bold text-lg text-[#ebd397] flex items-center gap-2">
                       <IconComp className="w-5 h-5 text-[#dfbf74]" />
                       {acc.type}
                     </span>
-                    <span className="text-[10px] uppercase tracking-wider font-semibold text-[#2b040a] bg-[#dfbf74] px-3 py-1 rounded-full">
-                      Tanda Kasih
-                    </span>
+                    <VintageWaxSeal className="w-9 h-9" />
                   </div>
 
                   <div className="space-y-1 py-1">
@@ -100,12 +101,12 @@ export default function DigitalGiftSection() {
                     {isCopied ? (
                       <>
                         <Check className="w-4 h-4 text-white" />
-                        <span>Copy Successfully!</span>
+                        <span>Salin Berhasil!</span>
                       </>
                     ) : (
                       <>
                         <Copy className="w-4 h-4" />
-                        <span>Copy</span>
+                        <span>Salin No. Rekening</span>
                       </>
                     )}
                   </button>
@@ -118,3 +119,4 @@ export default function DigitalGiftSection() {
     </section>
   );
 }
+

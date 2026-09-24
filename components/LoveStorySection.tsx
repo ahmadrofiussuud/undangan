@@ -1,8 +1,7 @@
 "use client";
 
 import React from "react";
-import { BurgundyCardFrame, FloralHeaderDivider } from "./SvgOrnaments";
-import { Heart, Sparkles, Compass } from "lucide-react";
+import { BurgundyCardFrame, FloralHeaderDivider, GoldenCornerFlourish, GoldenVineNode } from "./SvgOrnaments";
 
 const stories = [
   {
@@ -34,22 +33,26 @@ export default function LoveStorySection() {
       </div>
 
       {/* Story Timeline Cards */}
-      <div className="space-y-6">
+      <div className="relative space-y-8 before:absolute before:left-5 sm:before:left-6 before:top-4 before:bottom-4 before:w-0.5 before:bg-gradient-to-b before:from-[#dfbf74] before:via-[#ebd397] before:to-[#dfbf74]/20">
         {stories.map((story, index) => (
-          <div key={index} className="reveal-scale">
-            <BurgundyCardFrame className="bg-[#3d0710]/85 border-[#dfbf74]/50">
-              <div className="flex items-start gap-4">
-                <span className="w-10 h-10 rounded-full bg-[#520d18] border border-[#dfbf74] flex items-center justify-center text-[#dfbf74] shrink-0 font-serif font-bold text-sm">
-                  0{index + 1}
-                </span>
-                <div className="space-y-2">
-                  <h3 className="text-xl font-serif font-bold text-[#ebd397]">
-                    {story.title}
-                  </h3>
-                  <p className="text-xs sm:text-sm text-stone-200 leading-relaxed font-light">
-                    {story.text}
-                  </p>
-                </div>
+          <div key={index} className="reveal-scale relative pl-12 sm:pl-16">
+            {/* Timeline Botanical Golden Node */}
+            <div className="absolute left-0 top-3 z-10 filter drop-shadow-lg animate-pulse">
+              <GoldenVineNode className="w-10 h-10 text-[#dfbf74]" />
+              <span className="absolute inset-0 flex items-center justify-center text-[10px] font-bold text-[#ebd397]">
+                0{index + 1}
+              </span>
+            </div>
+
+            <BurgundyCardFrame className="bg-[#3d0710]/95 border-2 border-[#dfbf74]/60 relative overflow-hidden group hover:border-[#dfbf74] transition-all duration-300">
+              <GoldenCornerFlourish className="absolute top-1 right-1 w-7 h-7 text-[#dfbf74] opacity-75 rotate-90" />
+              <div className="space-y-2">
+                <h3 className="text-xl font-serif font-bold text-[#ebd397]">
+                  {story.title}
+                </h3>
+                <p className="text-xs sm:text-sm text-stone-200 leading-relaxed font-light">
+                  {story.text}
+                </p>
               </div>
             </BurgundyCardFrame>
           </div>
@@ -58,3 +61,4 @@ export default function LoveStorySection() {
     </section>
   );
 }
+

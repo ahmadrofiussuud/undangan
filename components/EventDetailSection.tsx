@@ -39,9 +39,16 @@ export default function EventDetailSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 mb-16">
           {/* Card 1: Akad Nikah */}
           <div className="reveal-left">
-            <BurgundyCardFrame className="h-full flex flex-col justify-between text-center space-y-6 bg-[#520d18]/90">
-              <div className="space-y-3">
-                <span className="inline-block px-4 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-[#dfbf74] text-[#2b040a]">
+            <BurgundyCardFrame className="h-full flex flex-col justify-between text-center space-y-6 bg-[#520d18]/95 relative overflow-hidden group">
+              {/* Corner Flourishes */}
+              <GoldenCornerFlourish className="absolute top-1 left-1 w-8 h-8 text-[#dfbf74] opacity-80" />
+              <GoldenCornerFlourish className="absolute top-1 right-1 w-8 h-8 text-[#dfbf74] opacity-80 rotate-90" />
+              
+              <div className="space-y-3 pt-2">
+                <div className="flex justify-center mb-1">
+                  <GoldIslamicDomeEmblem className="w-12 h-10 text-[#dfbf74] filter drop-shadow-md animate-pulse" />
+                </div>
+                <span className="inline-block px-4 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-[#dfbf74] text-[#2b040a] shadow-md">
                   Akad Nikah
                 </span>
                 <h3 className="text-2xl font-serif font-bold text-[#ebd397]">
@@ -67,9 +74,16 @@ export default function EventDetailSection() {
 
           {/* Card 2: Resepsi Pernikahan */}
           <div className="reveal-right">
-            <BurgundyCardFrame className="h-full flex flex-col justify-between text-center space-y-6 bg-[#520d18]/90">
-              <div className="space-y-3">
-                <span className="inline-block px-4 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-[#ebd397] text-[#2b040a]">
+            <BurgundyCardFrame className="h-full flex flex-col justify-between text-center space-y-6 bg-[#520d18]/95 relative overflow-hidden group">
+              {/* Corner Flourishes */}
+              <GoldenCornerFlourish className="absolute top-1 left-1 w-8 h-8 text-[#dfbf74] opacity-80" />
+              <GoldenCornerFlourish className="absolute top-1 right-1 w-8 h-8 text-[#dfbf74] opacity-80 rotate-90" />
+
+              <div className="space-y-3 pt-2">
+                <div className="flex justify-center mb-1">
+                  <GoldRingsEmblem className="w-12 h-10 text-[#dfbf74] filter drop-shadow-md animate-pulse" />
+                </div>
+                <span className="inline-block px-4 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-[#ebd397] text-[#2b040a] shadow-md">
                   Resepsi Pernikahan
                 </span>
                 <h3 className="text-2xl font-serif font-bold text-[#ebd397]">

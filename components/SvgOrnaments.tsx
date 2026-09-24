@@ -269,3 +269,118 @@ export function LuxuryCouplePhotoFrame({
   );
 }
 
+export function GoldenCornerFlourish({
+  className = "w-10 h-10 text-[#dfbf74]",
+}: {
+  className?: string;
+}) {
+  return (
+    <svg viewBox="0 0 50 50" fill="none" className={className}>
+      <path
+        d="M5 45 C5 20, 20 5, 45 5"
+        stroke="currentColor"
+        strokeWidth="2.2"
+        strokeLinecap="round"
+      />
+      <path
+        d="M12 45 C12 26, 26 12, 45 12"
+        stroke="currentColor"
+        strokeWidth="1.2"
+        strokeDasharray="3 2"
+      />
+      <circle cx="18" cy="18" r="3.5" fill="currentColor" />
+      <circle cx="18" cy="18" r="1.5" fill="#ebd397" />
+      <path d="M5 25 C10 18, 18 10, 25 5" stroke="currentColor" strokeWidth="1.5" />
+      <circle cx="28" cy="8" r="1.8" fill="#ebd397" />
+      <circle cx="8" cy="28" r="1.8" fill="#ebd397" />
+    </svg>
+  );
+}
+
+export function GoldIslamicDomeEmblem({
+  className = "w-12 h-10 text-[#dfbf74]",
+}: {
+  className?: string;
+}) {
+  return (
+    <svg viewBox="0 0 60 50" fill="none" className={className}>
+      <path
+        d="M30 5 C24 15, 12 18, 10 32 C10 40, 20 44, 30 44 C40 44, 50 40, 50 32 C48 18, 36 15, 30 5 Z"
+        fill="#520d18"
+        stroke="currentColor"
+        strokeWidth="2"
+      />
+      <path d="M30 2 C32 4, 32 6, 30 8 C28 6, 28 4, 30 2 Z" fill="#ebd397" />
+      <circle cx="30" cy="20" r="4" fill="currentColor" />
+      <path
+        d="M20 36 Q30 30 40 36"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+}
+
+export function GoldRingsEmblem({
+  className = "w-12 h-10 text-[#dfbf74]",
+}: {
+  className?: string;
+}) {
+  return (
+    <svg viewBox="0 0 60 40" fill="none" className={className}>
+      <circle
+        cx="22"
+        cy="20"
+        r="11"
+        stroke="currentColor"
+        strokeWidth="2.5"
+        fill="none"
+      />
+      <circle
+        cx="38"
+        cy="20"
+        r="11"
+        stroke="#ebd397"
+        strokeWidth="2.5"
+        fill="none"
+      />
+      <path
+        d="M20 10 L24 14 L20 18"
+        stroke="currentColor"
+        strokeWidth="1.5"
+      />
+      <circle cx="22" cy="8" r="2.5" fill="#ebd397" />
+    </svg>
+  );
+}
+
+export function GoldenVineNode({
+  className = "w-8 h-8 text-[#dfbf74]",
+}: {
+  className?: string;
+}) {
+  return (
+    <svg viewBox="0 0 40 40" fill="none" className={className}>
+      <circle
+        cx="20"
+        cy="20"
+        r="16"
+        fill="#3d0710"
+        stroke="currentColor"
+        strokeWidth="2"
+      />
+      <circle
+        cx="20"
+        cy="20"
+        r="10"
+        stroke="#ebd397"
+        strokeWidth="1"
+        strokeDasharray="3 2"
+      />
+      <circle cx="20" cy="20" r="5" fill="currentColor" />
+    </svg>
+  );
+}
+
+
