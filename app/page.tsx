@@ -12,6 +12,7 @@ import LoveStorySection from "@/components/LoveStorySection";
 import GallerySection from "@/components/GallerySection";
 import RsvpSection from "@/components/RsvpSection";
 import DigitalGiftSection from "@/components/DigitalGiftSection";
+import FooterSection from "@/components/FooterSection";
 import { FallingPetalsOverlay } from "@/components/FallingPetalsOverlay";
 
 function InvitationContent() {
