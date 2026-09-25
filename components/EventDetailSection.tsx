@@ -38,7 +38,7 @@ export default function EventDetailSection() {
           <p className="text-xs uppercase tracking-[0.25em] text-[#dfbf74] font-semibold">
             Rangkaian Acara
           </p>
-          <h2 className="text-3xl sm:text-5xl font-serif italic text-[#dfbf74] drop-shadow">
+          <h2 className="text-3xl sm:text-5xl font-serif italic text-[#dfbf74] drop-shadow gold-shimmer-text">
             Waktu &amp; Tempat
           </h2>
           <FloralHeaderDivider className="w-44 h-10 mx-auto text-[#dfbf74]" />

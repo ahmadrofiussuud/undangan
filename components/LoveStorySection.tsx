@@ -23,7 +23,7 @@ export default function LoveStorySection() {
     <section className="relative py-20 px-4 max-w-4xl mx-auto overflow-hidden text-[#fbf8f2]">
       {/* Section Header */}
       <div className="reveal text-center max-w-xl mx-auto mb-16 space-y-3">
-        <p className="text-4xl sm:text-5xl font-serif italic text-[#dfbf74] drop-shadow">
+        <p className="text-4xl sm:text-5xl font-serif italic text-[#dfbf74] drop-shadow gold-shimmer-text">
           Love Story
         </p>
         <FloralHeaderDivider className="w-44 h-10 mx-auto text-[#dfbf74]" />

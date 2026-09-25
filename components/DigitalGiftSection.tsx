@@ -49,7 +49,7 @@ export default function DigitalGiftSection() {
           <div className="w-16 h-16 mx-auto rounded-full bg-[#520d18] border-2 border-[#dfbf74] flex items-center justify-center shadow-xl">
             <Gift className="w-8 h-8 text-[#dfbf74]" />
           </div>
-          <h2 className="text-3xl sm:text-5xl font-serif italic text-[#dfbf74] drop-shadow">
+          <h2 className="text-3xl sm:text-5xl font-serif italic text-[#dfbf74] drop-shadow gold-shimmer-text">
             Wedding Gift
           </h2>
           <FloralHeaderDivider className="w-44 h-10 mx-auto text-[#dfbf74]" />

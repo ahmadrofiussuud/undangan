@@ -53,7 +53,7 @@ export default function CountdownSection() {
       <div className="relative z-10 max-w-4xl mx-auto text-center space-y-10">
         {/* Save the Date */}
         <div className="reveal space-y-2">
-          <p className="text-4xl sm:text-6xl font-serif italic text-[#dfbf74] drop-shadow-md">
+          <p className="text-4xl sm:text-6xl font-serif italic text-[#dfbf74] drop-shadow-md gold-shimmer-text">
             Save the Date
           </p>
           <p className="text-xs uppercase tracking-[0.3em] text-stone-200 font-semibold pt-1">

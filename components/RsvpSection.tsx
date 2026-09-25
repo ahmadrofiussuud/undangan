@@ -96,7 +96,7 @@ export default function RsvpSection({ defaultGuestName }: { defaultGuestName?: s
           <p className="text-xs uppercase tracking-[0.25em] text-[#dfbf74] font-semibold">
             Konfirmasi Kehadiran &amp; Ucapan
           </p>
-          <h2 className="text-3xl sm:text-5xl font-serif italic text-[#dfbf74] drop-shadow">
+          <h2 className="text-3xl sm:text-5xl font-serif italic text-[#dfbf74] drop-shadow gold-shimmer-text">
             RSVP &amp; Buku Tamu
           </h2>
           <FloralHeaderDivider className="w-44 h-10 mx-auto text-[#dfbf74]" />
