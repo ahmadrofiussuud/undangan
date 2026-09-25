@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { FloralHeaderDivider, GoldenCornerFlourish } from "./SvgOrnaments";
+import { FloralHeaderDivider, GoldenCornerFlourish, GoldCameraDiamondEmblem } from "./SvgOrnaments";
 import { GoldenSparkleParticles } from "./GoldenSparkleParticles";
 import { X, ZoomIn } from "lucide-react";
 
@@ -58,6 +58,9 @@ export default function GallerySection() {
 
       <div className="relative z-10 max-w-5xl mx-auto">
         <div className="reveal text-center max-w-xl mx-auto mb-16 space-y-3">
+          <div className="flex justify-center mb-1">
+            <GoldCameraDiamondEmblem className="w-14 h-14 text-[#dfbf74] filter drop-shadow-lg animate-pulse" />
+          </div>
           <p className="text-xs uppercase tracking-[0.25em] text-[#dfbf74] font-semibold">
             Galeri Kenangan
           </p>

@@ -383,6 +383,60 @@ export function GoldenVineNode({
   );
 }
 
+export function GoldCameraDiamondEmblem({
+  className = "w-14 h-14 text-[#dfbf74]",
+}: {
+  className?: string;
+}) {
+  return (
+    <svg viewBox="0 0 80 80" fill="none" className={className}>
+      {/* Outer Wreath Laurel Arc */}
+      <path
+        d="M15 45 C12 30, 25 15, 40 15 C55 15, 68 30, 65 45"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeDasharray="4 2"
+      />
+
+      {/* Golden Vintage Camera Body */}
+      <rect
+        x="20"
+        y="32"
+        width="40"
+        height="28"
+        rx="6"
+        fill="#3d0710"
+        stroke="currentColor"
+        strokeWidth="2.5"
+      />
+      <path
+        d="M30 32 L34 26 H46 L50 32 Z"
+        fill="#520d18"
+        stroke="currentColor"
+        strokeWidth="2"
+      />
+
+      {/* Lens Circle with Diamond Sparkle */}
+      <circle
+        cx="40"
+        cy="46"
+        r="10"
+        fill="#520d18"
+        stroke="#ebd397"
+        strokeWidth="2"
+      />
+      <circle cx="40" cy="46" r="6" stroke="currentColor" strokeWidth="1" />
+
+      {/* Diamond Cut Sparkle Top */}
+      <path
+        d="M40 10 L44 16 L40 22 L36 16 Z"
+        fill="#ebd397"
+        stroke="currentColor"
+        strokeWidth="1"
+      />
+      <circle cx="40" cy="16" r="2" fill="#fff" />
+    </svg>
+  );
 export function GoldenQuillPenEmblem({
   className = "w-14 h-14 text-[#dfbf74]",
 }: {
@@ -418,6 +472,8 @@ export function GoldenQuillPenEmblem({
     </svg>
   );
 }
+
+
 
 
 
