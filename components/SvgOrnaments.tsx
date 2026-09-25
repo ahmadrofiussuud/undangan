@@ -475,6 +475,56 @@ export function GoldenQuillPenEmblem({
   );
 }
 
+export function RoyalMonogramEmblem({
+  className = "w-16 h-16 text-[#dfbf74]",
+}: {
+  className?: string;
+}) {
+  return (
+    <svg viewBox="0 0 100 100" fill="none" className={className}>
+      {/* Outer Golden Wreath Laurel */}
+      <path
+        d="M25 75 C12 55, 15 30, 35 15 C45 8, 55 8, 65 15 C85 30, 88 55, 75 75"
+        stroke="currentColor"
+        strokeWidth="2.5"
+        strokeDasharray="5 3"
+      />
+      <circle cx="50" cy="10" r="3" fill="#ebd397" />
+
+      {/* Royal Crown Crest Top */}
+      <path
+        d="M38 24 L42 16 L50 20 L58 16 L62 24 Z"
+        fill="#520d18"
+        stroke="currentColor"
+        strokeWidth="1.5"
+      />
+      <circle cx="50" cy="15" r="2" fill="#ebd397" />
+
+      {/* Monogram Initials D & T */}
+      <text
+        x="50"
+        y="58"
+        textAnchor="middle"
+        fill="#ebd397"
+        fontSize="24"
+        fontFamily="serif"
+        fontWeight="bold"
+        fontStyle="italic"
+      >
+        D &amp; T
+      </text>
+
+      {/* Bottom Flourish Ribbon */}
+      <path
+        d="M32 72 Q50 82 68 72"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+}
+
 
 
 

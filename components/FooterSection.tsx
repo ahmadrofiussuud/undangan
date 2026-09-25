@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { Heart } from "lucide-react";
-import { FloralHeaderDivider } from "./SvgOrnaments";
+import { FloralHeaderDivider, GoldenCornerFlourish, RoyalMonogramEmblem } from "./SvgOrnaments";
 
 export default function FooterSection() {
   return (
@@ -23,7 +23,15 @@ export default function FooterSection() {
       <div className="relative z-10 max-w-xl mx-auto space-y-8">
         <FloralHeaderDivider className="w-40 h-8 mx-auto text-[#dfbf74]" />
 
-        <div className="p-8 rounded-3xl bg-[#520d18]/90 border-2 border-[#dfbf74]/60 shadow-2xl space-y-6">
+        <div className="p-8 sm:p-10 rounded-3xl bg-[#520d18]/95 border-2 border-[#dfbf74] shadow-2xl space-y-6 relative overflow-hidden group">
+          <GoldenCornerFlourish className="absolute top-1 left-1 w-8 h-8 text-[#dfbf74] opacity-80" />
+          <GoldenCornerFlourish className="absolute top-1 right-1 w-8 h-8 text-[#dfbf74] opacity-80 rotate-90" />
+          
+          {/* Royal Monogram Emblem */}
+          <div className="flex justify-center mb-2">
+            <RoyalMonogramEmblem className="w-20 h-20 text-[#dfbf74] filter drop-shadow-xl animate-candle-flicker" />
+          </div>
+
           <p className="text-xs sm:text-sm text-stone-200 font-light leading-relaxed">
             Menjadi sebuah kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dalam hari bahagia kami. Terimakasih atas segala ucapan, doa, dan perhatian yang diberikan.
           </p>
@@ -33,7 +41,7 @@ export default function FooterSection() {
           </p>
 
           <div className="space-y-1 pt-2">
-            <h2 className="text-3xl sm:text-4xl font-serif font-bold italic text-[#ebd397]">
+            <h2 className="text-3xl sm:text-4xl font-serif font-bold italic text-[#ebd397] gold-shimmer-text">
               Diana &amp; Thalib
             </h2>
             <p className="text-xs text-stone-300">Beserta Keluarga Besar Kedua Mempelai</p>
