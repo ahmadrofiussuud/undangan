@@ -437,6 +437,8 @@ export function GoldCameraDiamondEmblem({
       <circle cx="40" cy="16" r="2" fill="#fff" />
     </svg>
   );
+}
+
 export function GoldenQuillPenEmblem({
   className = "w-14 h-14 text-[#dfbf74]",
 }: {
